@@ -157,7 +157,7 @@ Criterios (QC): mojado adecuado, ausencia de puentes, sin <em>tombstoning</em> y
 
 ### 5.2 Conectividad por headers (T-0)
 <p align="justify"> Antes de energizar la placa, se realiza una verificación minuciosa de continuidad utilizando los headers intermedios como puntos de prueba. Se confirma que cada módulo bufferizado (reguladores, LEDs, LCD, reloj y reset) tiene su camino eléctrico completo desde la entrada del buffer hasta la salida hacia la carga, y que no existen puentes inadvertidos a tierra o entre señales contiguas. Con el multímetro en modo continuidad y la placa sin alimentación, se comprueba cada par “entrada ↔ salida”, escuchando el pitido solo cuando corresponde según el esquemático. Se finaliza con una verificación de ausencia de corto entre rieles de alimentación y GND. <strong>Criterio de aceptación:</strong> toda la conectividad coincide con el diseño y no se detectan cortos. </p>
-**Objetivo:** Verificar continuidad entre headers, buffers y cargas, asegurando que no existan cortos entre rieles.
+Objetivo: Verificar continuidad entre headers, buffers y cargas, asegurando que no existan cortos entre rieles.
 
 **Procedimiento:**
 - Placa sin energía, DMM en continuidad.  
