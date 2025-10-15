@@ -20,124 +20,139 @@ Este sprint documenta la construcción física de la PCB del proyecto, desde el 
 
 ## 2. Integrantes
 
-* *(Agrega aquí los nombres de los integrantes del equipo)*
+- Samuel Valdivia Mejias
+- Sebastian Barrantes Perez
+- Christopher Quiros Cisneros
 
 ---
 
 ## 3. Etapas de fabricación
 
-> Reemplaza las rutas `images/sprint3/...` por tus fotos.
-> Sugerencia de nombres: `01-drill.jpg`, `02-metalizacion.jpg`, `02-stencil.jpg`, `03-endmill-bottom.jpg`, etc.
+### 3.1 Drill
 
-### 3.1 Drill (Barrenado)
-
-<p align="justify">
-Objetivo: generar todos los taladros (PTH, montaje y fiduciales) conforme a los datos de fabricación.  
-Criterios (QC): diámetros dentro de tolerancia, pads íntegros y sin desviaciones.
+<p align="center">
+  <img src="https://github.com/SebasJB/Proyecto-Taller-Integrador/blob/main/Documentaci%C3%B3n%20SIWA/Drill.jpeg" alt="PCB: Post drill" width="600">
 </p>
-
-![Drill – Taladrado](images/sprint3/01-drill.jpg)
+<p align="center">
+PCB: Post drill
 
 ---
 
 ### 3.2 Metalización y Stencil
 
-<p align="justify">
-Objetivo: metalizar orificios (PTH) para continuidad entre capas y fabricar el stencil para deposición de pasta.  
-Criterios (QC): continuidad eléctrica en PTH (muestras), adhesión uniforme, stencil sin rebabas ni deformaciones.
-</p>
 
-![Metalización de PTH](images/sprint3/02-metalizacion.jpg)
-![Stencil de pasta](images/sprint3/02-stencil.jpg)
+<p align="center">
+  <img src="https://github.com/SebasJB/Proyecto-Taller-Integrador/blob/main/Documentaci%C3%B3n%20SIWA/metalizacion.jpeg" alt="PCB: Post metalizacion" width="600">
+</p>
+<p align="center">
+PCB: Post metalizacion
 
 ---
 
 ### 3.3 Endmill Bottom
 
-<p align="justify">
-Objetivo: fresado de contornos/cavidades en la <strong>cara inferior</strong>.  
-Criterios (QC): bordes limpios, dimensiones dentro de tolerancia y ausencia de delaminación.
-</p>
 
-![Endmill Bottom](images/sprint3/03-endmill-bottom.jpg)
+<p align="center">
+  <img src="https://github.com/SebasJB/Proyecto-Taller-Integrador/blob/main/Documentaci%C3%B3n%20SIWA/EMB1.jpeg" alt="PCB: Post Endmill Bottom" width="600">
+</p>
+<p align="center">
+PCB: Post Endmill Bottom
 
 ---
 
-### 3.4 Verificación visual
 
-<p align="justify">
-Objetivo: inspección óptica intermedia para detectar rayas, pads dañados, desplazamientos y contaminación.  
-Criterios (QC): máscara (si aplica) intacta, sin cortos visibles y registros correctos.
+### 3.4 Endmill Top
+
+
+<p align="center">
+  <img src="https://github.com/SebasJB/Proyecto-Taller-Integrador/blob/main/Documentaci%C3%B3n%20SIWA/EMT1.jpeg" alt="PCB: Endmill top durante fabricacion" width="600">
 </p>
+<p align="center">
+PCB: Endmill top durante fabricacion
 
-![Inspección Visual Intermedia](images/sprint3/04-visual-check.jpg)
+<p align="center">
+  <img src="https://github.com/SebasJB/Proyecto-Taller-Integrador/blob/main/Documentaci%C3%B3n%20SIWA/EMT2.jpeg" alt="PCB: Post Endmill Top" width="600">
+</p>
+<p align="center">
+PCB: Post Endmill Top
 
 ---
 
-### 3.5 Endmill Top
+### 3.5 Verificación de aislamientos y cortos
 
-<p align="justify">
-Objetivo: fresado en la <strong>cara superior</strong> (contornos, ranuras y ventanas).  
-Criterios (QC): simetría respecto a la cara inferior y coincidencia con DXF/Gerbers mecánicos.
+
+<p align="center">
+  <img src="https://github.com/SebasJB/Proyecto-Taller-Integrador/blob/main/Documentaci%C3%B3n%20SIWA/rev1.jpeg" alt="PCB: Revision de cortos" width="600">
 </p>
-
-![Endmill Top](images/sprint3/05-endmill-top.jpg)
+<p align="center">
+PCB: Revision de cortos
+ 
+<p align="center">
+  <img src="https://github.com/SebasJB/Proyecto-Taller-Integrador/blob/main/Documentaci%C3%B3n%20SIWA/rev2.jpeg" alt="PCB: Revision de cortos" width="600">
+</p>
+<p align="center">
+PCB: Revision de cortos
+ 
+<p align="center">
+  <img src="https://github.com/SebasJB/Proyecto-Taller-Integrador/blob/main/Documentaci%C3%B3n%20SIWA/rev3.jpeg" alt="PCB: Revision de cortos" width="600">
+</p>
+<p align="center">
+PCB: Revision de cortos
 
 ---
 
-### 3.6 Verificación de aislamientos y cortos
 
-<p align="justify">
-Objetivo: comprobar <em>clearances</em> y ausencia de cortos en redes críticas.  
-Criterios (QC): continuidad solo donde corresponde; aislamiento ≥ al clearance de diseño (mediciones spot con multímetro).
+### 3.6 Soldermask y Silkscreen
+
+
+<p align="center">
+  <img src="https://github.com/SebasJB/Proyecto-Taller-Integrador/blob/main/Documentaci%C3%B3n%20SIWA/soldertop.jpeg" alt="PCB: Post Soldermask Top" width="600">
 </p>
+<p align="center">
+PCB: Post Soldermask Top
 
-![Pruebas de aislamiento/continuidad](images/sprint3/06-insulation-shorts.jpg)
+<p align="center">
+  <img src="https://github.com/SebasJB/Proyecto-Taller-Integrador/blob/main/Documentaci%C3%B3n%20SIWA/solderbot.jpeg" alt="PCB: Post Soldermask Bottom" width="600">
+</p>
+<p align="center">
+PCB: Post Soldermask Bottom
 
 ---
 
-### 3.7 Recorte y recubrimiento con estaño
+### 3.7 Soldadura SMD
 
-<p align="justify">
-Objetivo: panelizado/corte final y recubrimiento con estaño (tin coating) en pads expuestos para mejorar soldabilidad.  
-Criterios (QC): bordes sin astillas, recubrimiento uniforme y sin puentes metálicos.
+
+
+<p align="center">
+  <img src="https://github.com/SebasJB/Proyecto-Taller-Integrador/blob/main/Documentaci%C3%B3n%20SIWA/pasta%20de%20soldadura.jpeg" alt="PCB: aplicacion de pasta de soldadura" width="600">
 </p>
-
-![Recorte y tin coating](images/sprint3/07-tin-coating.jpg)
-
----
-
-### 3.8 Soldermask y Silkscreen
-
-<p align="justify">
-Objetivo: aplicar soldermask (protección) y serigrafía (referencias, polaridades y marcación pin-1).  
-Criterios (QC): registro correcto, silks legible y sin invadir pads.
+<p align="center">
+PCB: aplicacion de pasta de soldadura
+ 
+<p align="center">
+  <img src="https://github.com/SebasJB/Proyecto-Taller-Integrador/blob/main/Documentaci%C3%B3n%20SIWA/pre%20soldadura.jpeg" alt="PCB: Presoldadura, componentes ya colocados" width="600">
 </p>
+<p align="center">
+PCB: Presoldadura, componentes ya colocados
 
-![Soldermask](images/sprint3/08-soldermask.jpg)
-![Silkscreen](images/sprint3/08-silkscreen.jpg)
-
----
-
-### 3.9 Soldadura SMD
-
-<p align="justify">
-Objetivo: deposición de pasta mediante stencil, <em>pick & place</em> y reflow siguiendo el perfil térmico recomendado.  
-Criterios (QC): mojado adecuado, ausencia de puentes, sin <em>tombstoning</em> y orientación correcta de componentes.
+<p align="center">
+  <img src="https://github.com/SebasJB/Proyecto-Taller-Integrador/blob/main/Documentaci%C3%B3n%20SIWA/horno.jpeg" alt="PCB: Proceso de soldado en el horno" width="600">
 </p>
+<p align="center">
+PCB: Proceso de soldado en el horno
 
-![Pasta + Colocación](images/sprint3/09-smd-paste-place.jpg)
-![Reflow – Resultado](images/sprint3/09-smd-reflow.jpg)
+<p align="center">
+  <img src="https://github.com/SebasJB/Proyecto-Taller-Integrador/blob/main/Documentaci%C3%B3n%20SIWA/post%20soldadura.jpeg" alt="PCB: Post Soldadura" width="600">
+</p>
+<p align="center">
+PCB: Post Soldadura
 
 ---
 
 ## 4. Erros y desafios
 
 <p align="justify">
-<strong>Dimensional:</strong> contorno, taladros y grosor.  
-<strong>Eléctrico básico:</strong> continuidad PTH y ausencia de cortos.  
-<strong>Visual:</strong> pads íntegros, registro soldemask/silks.  
-<strong>Soldabilidad:</strong> humectación, alineación de pines y voids aceptables en pads térmicos (si aplica).
+...
 </p>
 
 ---
