@@ -159,7 +159,15 @@ PCB: Post Soldadura
 
 
 ## 5. Test Plan – Verificación y Validación de la PCB
-<p align="justify"> Este plan de pruebas detalla las verificaciones eléctricas y funcionales realizadas sobre la tarjeta fabricada. Cada prueba se identifica por un código <strong>(T-N)</strong> y busca confirmar la correcta operación de los subsistemas antes y después del montaje del ASIC. Las pruebas se ejecutan siguiendo una secuencia lógica: desde conectividad básica hasta validaciones funcionales completas con firmware de diagnóstico. </p>
+<p align="justify"> Este plan de pruebas detalla las verificaciones eléctricas y funcionales realizadas sobre la tarjeta fabricada. Cada prueba se identifica por un código <strong>(T-N)</strong> y busca confirmar la correcta operación de los subsistemas antes y después del montaje del ASIC. Las pruebas se ejecutan siguiendo una secuencia lógica: desde conectividad básica hasta validaciones funcionales completas con firmware de diagnóstico. 
+De igual manera, de primer paso, se realizo la prueba del funcionamiento de la memoria:
+</p>
+
+<p align="center">
+  <img src="https://github.com/SebasJB/Proyecto-Taller-Integrador/blob/main/Documentaci%C3%B3n%20SIWA/Prueba%20memoria%20(OLED%20test%20cargado).png" alt="Prueba memoria (OLED test cargado)" width="600">
+</p>
+<p align="center">
+PCB: Post Soldadura
 
  ### 5.1. Instrumentación
 
