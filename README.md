@@ -152,7 +152,9 @@ PCB: Post Soldadura
 ## 4. Erros y desafios
 
 <p align="justify">
-...
+  - Durante el proceso de Endmill Top se encontró un corto en el buffer 0 de los LEDs el cual era causado por una mala remoción del cobre en la pista, se procedió a remover con un cincel especial.
+  - Luego durante el proceso de soldadura SMD se generó otro cortocircuito que era causado por el contacto de dos soldaduras diferentes entre el pin de VDD y la salida hacia el LED 4 provocando una falla, luego de removerla con el cincel se pudo solucionar
+  - Se encontró un probloema con los conectores hembra de la interfaz del SIWA que no entran en la placa por ser de forma cuadrada y ligeramente mas ancho que el espacio del hoyo para que entre los pines, se procedió a reducir el tamaño mediante limadura.
 </p>
 
 ---
