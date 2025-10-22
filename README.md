@@ -220,4 +220,3 @@ Todos los caminos coinciden con el esquemático y no hay cortos entre rieles.
 
 ---
 
-> **Nota:** si las imágenes viven en otra carpeta del repo (p. ej. `docs/img/`), cambia únicamente las rutas en los `![...](...)` manteniendo nombres coherentes para facilitar la trazabilidad.
