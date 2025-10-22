@@ -27,135 +27,55 @@ Este sprint documenta la construcción física de la PCB del proyecto, desde el 
 ---
 
 ## 3. Etapas de fabricación
-
 ### 3.1 Drill
 
-<p align="center">
-  <img src="https://github.com/SebasJB/Proyecto-Taller-Integrador/blob/main/Documentaci%C3%B3n%20SIWA/Drill.jpeg" alt="PCB: Post drill" width="600">
-</p>
-<p align="center">
-PCB: Post drill
+La etapa de perforado o drill, consiste en taladrar todos los orificios para pines, tornillos y vías según el archivo de mecanizado. Aquí se definen los diámetros y la precisión de los taladros que conectarán las capas a través de metalización. En la siguiente imagen se observa el resultado del proceso de perforado.
 
----
+<p align="center"> <img src="https://github.com/SebasJB/Proyecto-Taller-Integrador/blob/main/Documentaci%C3%B3n%20SIWA/Drill.jpeg" alt="PCB: Post drill" width="600"> </p> <p align="center"> PCB: Post drill </p>
 
 ### 3.2 Metalización y Stencil
 
+La metalización recubre las paredes de los orificios con cobre para crear vías eléctricas entre capas. El stencil se usa posteriormente para depositar pasta de soldar de forma precisa sobre pads SMD. En la siguiente imagen se aprecia el tablero después de metalizar.
 
-<p align="center">
-  <img src="https://github.com/SebasJB/Proyecto-Taller-Integrador/blob/main/Documentaci%C3%B3n%20SIWA/metalizacion.jpeg" alt="PCB: Post metalizacion" width="600">
-</p>
-<p align="center">
-PCB: Post metalizacion
-
----
+<p align="center"> <img src="https://github.com/SebasJB/Proyecto-Taller-Integrador/blob/main/Documentaci%C3%B3n%20SIWA/metalizacion.jpeg" alt="PCB: Post metalizacion" width="600"> </p> <p align="center"> PCB: Post metalizacion </p>
 
 ### 3.3 Endmill Bottom
 
+El endmill bottom es un fresado de contorno o cavidades realizado por la cara inferior para definir bordes, islas o despejes de cobre mecánicos. En la siguiente imagen se muestra el resultado del fresado inferior.
 
-<p align="center">
-  <img src="https://github.com/SebasJB/Proyecto-Taller-Integrador/blob/main/Documentaci%C3%B3n%20SIWA/EMB1.jpeg" alt="PCB: Post Endmill Bottom" width="600">
-</p>
-<p align="center">
-PCB: Post Endmill Bottom
-
----
-
+<p align="center"> <img src="https://github.com/SebasJB/Proyecto-Taller-Integrador/blob/main/Documentaci%C3%B3n%20SIWA/EMB1.jpeg" alt="PCB: Post Endmill Bottom" width="600"> </p> <p align="center"> PCB: Post Endmill Bottom </p>
 
 ### 3.4 Endmill Top
 
+El endmill top realiza operaciones de fresado por la cara superior para definir pistas y pads. En las siguientes imágenes se observa el proceso durante la fabricación y el resultado final de la parte superior.
 
-<p align="center">
-  <img src="https://github.com/SebasJB/Proyecto-Taller-Integrador/blob/main/Documentaci%C3%B3n%20SIWA/EMT1.jpeg" alt="PCB: Endmill top durante fabricacion" width="600">
-</p>
-<p align="center">
-PCB: Endmill top durante fabricacion
-
-<p align="center">
-  <img src="https://github.com/SebasJB/Proyecto-Taller-Integrador/blob/main/Documentaci%C3%B3n%20SIWA/EMT2.jpeg" alt="PCB: Post Endmill Top" width="600">
-</p>
-<p align="center">
-PCB: Post Endmill Top
-
----
+<p align="center"> <img src="https://github.com/SebasJB/Proyecto-Taller-Integrador/blob/main/Documentaci%C3%B3n%20SIWA/EMT1.jpeg" alt="PCB: Endmill top durante fabricacion" width="600"> </p> <p align="center"> PCB: Endmill top durante fabricacion </p> <p align="center"> <img src="https://github.com/SebasJB/Proyecto-Taller-Integrador/blob/main/Documentaci%C3%B3n%20SIWA/EMT2.jpeg" alt="PCB: Post Endmill Top" width="600"> </p> <p align="center"> PCB: Post Endmill Top </p>
 
 ### 3.5 Verificación de aislamientos y cortos
 
+En la verificación eléctrica se inspeccionan aislamientos entre redes y la ausencia de cortocircuitos, ya sea con multímetro o equipo de prueba de continuidad/hi-pot. En las siguientes imágenes se ven distintas revisiones realizadas.
 
-<p align="center">
-  <img src="https://github.com/SebasJB/Proyecto-Taller-Integrador/blob/main/Documentaci%C3%B3n%20SIWA/rev1.jpeg" alt="PCB: Revision de cortos" width="600">
-</p>
-<p align="center">
-PCB: Revision de cortos
- 
-<p align="center">
-  <img src="https://github.com/SebasJB/Proyecto-Taller-Integrador/blob/main/Documentaci%C3%B3n%20SIWA/rev2.jpeg" alt="PCB: Revision de cortos" width="600">
-</p>
-<p align="center">
-PCB: Revision de cortos
- 
-<p align="center">
-  <img src="https://github.com/SebasJB/Proyecto-Taller-Integrador/blob/main/Documentaci%C3%B3n%20SIWA/rev3.jpeg" alt="PCB: Revision de cortos" width="600">
-</p>
-<p align="center">
-PCB: Revision de cortos
-
----
-
+<p align="center"> <img src="https://github.com/SebasJB/Proyecto-Taller-Integrador/blob/main/Documentaci%C3%B3n%20SIWA/rev1.jpeg" alt="PCB: Revision de cortos" width="600"> </p> <p align="center"> PCB: Revision de cortos </p> <p align="center"> <img src="https://github.com/SebasJB/Proyecto-Taller-Integrador/blob/main/Documentaci%C3%B3n%20SIWA/rev2.jpeg" alt="PCB: Revision de cortos" width="600"> </p> <p align="center"> PCB: Revision de cortos </p> <p align="center"> <img src="https://github.com/SebasJB/Proyecto-Taller-Integrador/blob/main/Documentaci%C3%B3n%20SIWA/rev3.jpeg" alt="PCB: Revision de cortos" width="600"> </p> <p align="center"> PCB: Revision de cortos </p>
 
 ### 3.6 Soldermask y Silkscreen
 
+La soldermask protege el cobre expuesto y define ventanas de soldadura sobre los pads; el silkscreen imprime referencias, logos y marcas de orientación. En las siguientes imágenes se muestran las caras superior e inferior tras aplicar soldermask y serigrafía.
 
-<p align="center">
-  <img src="https://github.com/SebasJB/Proyecto-Taller-Integrador/blob/main/Documentaci%C3%B3n%20SIWA/soldertop.jpeg" alt="PCB: Post Soldermask Top" width="600">
-</p>
-<p align="center">
-PCB: Post Soldermask Top
-
-<p align="center">
-  <img src="https://github.com/SebasJB/Proyecto-Taller-Integrador/blob/main/Documentaci%C3%B3n%20SIWA/solderbot.jpeg" alt="PCB: Post Soldermask Bottom" width="600">
-</p>
-<p align="center">
-PCB: Post Soldermask Bottom
-
----
+<p align="center"> <img src="https://github.com/SebasJB/Proyecto-Taller-Integrador/blob/main/Documentaci%C3%B3n%20SIWA/soldertop.jpeg" alt="PCB: Post Soldermask Top" width="600"> </p> <p align="center"> PCB: Post Soldermask Top </p> <p align="center"> <img src="https://github.com/SebasJB/Proyecto-Taller-Integrador/blob/main/Documentaci%C3%B3n%20SIWA/solderbot.jpeg" alt="PCB: Post Soldermask Bottom" width="600"> </p> <p align="center"> PCB: Post Soldermask Bottom </p>
 
 ### 3.7 Soldadura SMD
 
+La soldadura SMD comprende el depósito de pasta con stencil, la colocación de componentes y el perfil de reflow en horno. En las siguientes imágenes se aprecia la aplicación de pasta, el pre-ensamble, el paso por horno y el resultado final de soldadura.
 
-
-<p align="center">
-  <img src="https://github.com/SebasJB/Proyecto-Taller-Integrador/blob/main/Documentaci%C3%B3n%20SIWA/pasta%20de%20soldadura.jpeg" alt="PCB: aplicacion de pasta de soldadura" width="600">
-</p>
-<p align="center">
-PCB: aplicacion de pasta de soldadura
- 
-<p align="center">
-  <img src="https://github.com/SebasJB/Proyecto-Taller-Integrador/blob/main/Documentaci%C3%B3n%20SIWA/pre%20soldadura.jpeg" alt="PCB: Presoldadura, componentes ya colocados" width="600">
-</p>
-<p align="center">
-PCB: Presoldadura, componentes ya colocados
-
-<p align="center">
-  <img src="https://github.com/SebasJB/Proyecto-Taller-Integrador/blob/main/Documentaci%C3%B3n%20SIWA/horno.jpeg" alt="PCB: Proceso de soldado en el horno" width="600">
-</p>
-<p align="center">
-PCB: Proceso de soldado en el horno
-
-<p align="center">
-  <img src="https://github.com/SebasJB/Proyecto-Taller-Integrador/blob/main/Documentaci%C3%B3n%20SIWA/post%20soldadura.jpeg" alt="PCB: Post Soldadura" width="600">
-</p>
-<p align="center">
-PCB: Post Soldadura
-
----
+<p align="center"> <img src="https://github.com/SebasJB/Proyecto-Taller-Integrador/blob/main/Documentaci%C3%B3n%20SIWA/pasta%20de%20soldadura.jpeg" alt="PCB: aplicacion de pasta de soldadura" width="600"> </p> <p align="center"> PCB: aplicacion de pasta de soldadura </p> <p align="center"> <img src="https://github.com/SebasJB/Proyecto-Taller-Integrador/blob/main/Documentaci%C3%B3n%20SIWA/pre%20soldadura.jpeg" alt="PCB: Presoldadura, componentes ya colocados" width="600"> </p> <p align="center"> PCB: Presoldadura, componentes ya colocados </p> <p align="center"> <img src="https://github.com/SebasJB/Proyecto-Taller-Integrador/blob/main/Documentaci%C3%B3n%20SIWA/horno.jpeg" alt="PCB: Proceso de soldado en el horno" width="600"> </p> <p align="center"> PCB: Proceso de soldado en el horno </p> <p align="center"> <img src="https://github.com/SebasJB/Proyecto-Taller-Integrador/blob/main/Documentaci%C3%B3n%20SIWA/post%20soldadura.jpeg" alt="PCB: Post Soldadura" width="600"> </p> <p align="center"> PCB: Post Soldadura </p>
 
 ## 4. Erros y desafios
 
-- Durante el proceso de Endmill Top se encontró un corto en el buffer 0 de los LEDs el cual era causado por una mala remoción del cobre en la pista, se procedió a remover con un cincel especial.
-- Luego durante el proceso de soldadura SMD se generó otro cortocircuito que era causado por el contacto de dos soldaduras diferentes entre el pin de VDD y la salida hacia el LED 4 provocando una falla, luego de removerla con el cincel se pudo solucionar
-- Se encontró un probloema con los conectores hembra de la interfaz del SIWA que no entran en la placa por ser de forma cuadrada y ligeramente mas ancho que el espacio del hoyo para que entre los pines, se procedió a reducir el tamaño mediante limadura.
+Durante el proceso de Endmill Top se encontró un corto en el buffer 0 de los LEDs el cual era causado por una mala remoción del cobre en la pista, se procedió a remover con un cincel especial.
 
----
+Luego durante el proceso de soldadura SMD se generó otro cortocircuito que era causado por el contacto de dos soldaduras diferentes entre el pin de VDD y la salida hacia el LED 4 provocando una falla, luego de removerla con el cincel se pudo solucionar
+
+Se encontró un probloema con los conectores hembra de la interfaz del SIWA que no entran en la placa por ser de forma cuadrada y ligeramente mas ancho que el espacio del hoyo para que entre los pines, se procedió a reducir el tamaño mediante limadura.
 
 
 ## 5. Test Plan – Verificación y Validación de la PCB
