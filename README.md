@@ -123,8 +123,13 @@ Todos los caminos coinciden con el esquemático y no hay cortos entre rieles.
 | 1.0 V | 1.00 ± 2 % | < 20 mVpp | ☐ |
 
 **Procedimiento:**
-- Alimentar desde la fuente de laboratorio.  
-- Medir cada riel en su header de salida con Multímetro y osciloscopio (AC acoplado).
+
+- Fuente de laboratorio a **Vin = 5.0 V**, GND común.  
+- Medir con multímetro en el header de Alimentación:
+  - Pin 1 (VDD10)
+  - Pin 5 (VDD18)
+  - Pin 3 (VDD30) 
+- Medir cada pin en su header de salida con Multímetro y osciloscopio (AC acoplado).
   
 **Criterio:** Las tres salidas están dentro de tolerancia y con rizado menor al límite.
 
@@ -134,13 +139,18 @@ Todos los caminos coinciden con el esquemático y no hay cortos entre rieles.
 **Objetivo:** Evaluar regulación bajo corriente nominal y respuesta a transientes.
 
 **Procedimiento:**
-- Conectar carga resistiva a cada riel.  
-- Medir caída de tensión y rizado.  
+**Conexión:**
+- Conecta cargas resistivas en protoboard y usar jumpers para conectar de los pines de salida del header a la protoboard:  
+  - 10 Ω → VDD10,  
+  - 18 Ω → VDD18,  
+  - 30 Ω → VDD30.  
+- Medir caída de tensión con Multímetro.  
 - Realizar un **step-load de 10 % a 100 % a 10 %** y observar overshoot < 5 %.  
  Para el step-load: **Conmutador y resistencias**
 - 2 resistencias que representen 10 % y 100 % de carga (R1 y R2).
 - 1 transistor NPN (2N2222, 2N3904) o MOSFET N (IRLZ44N, 2N7000).
 - Una señal cuadrada con generador de señales.
+- Conectar el generador de señales al transistor y luego medir los cambios de tensión con osciloscopio en cada una de las resistencias de carga.
 
 **Criterio:** Tensiones y rizados se mantienen dentro del rango permitido.
 
@@ -150,8 +160,12 @@ Todos los caminos coinciden con el esquemático y no hay cortos entre rieles.
 **Objetivo:** Verificar forma de pulso
 
 **Procedimiento:**
-1. Medir en el header de **RESET** con osciloscopio.  
-2. Pulsar el botón para verificar duración (≥ 100 ms).  
+1. Conecta osciloscopio entre **pin 7 (RSTO)** y **GND**.  
+2. Alimenta la placa (Vin = 5 V).  
+3. Presiona el pulsador **MR**.  
+4. Observa en pantalla:  
+   - Pulso activo **bajo** (≈ 100–200 ms).  
+   - Nivel alto estable (3 V) tras liberación. 
 
 **Criterio:** Pulso limpio, sin rebotes y a nivel correcto
 
@@ -160,8 +174,16 @@ Todos los caminos coinciden con el esquemático y no hay cortos entre rieles.
 
 **Objetivo:** Confirmar frecuencia y duty-cycle del oscilador con buffer.
 
+**Pines:**  
+- **CLK0** → pin 40  
+- **GND** → pin 25  
+- Alimentación: VDD18 (pin 4 del header de alimentación)
+
 **Procedimiento:**
-- Alimentar el circuito y medir en el header de salida del buffer.  
+1. Colocar la sonda del osciloscopio en **pin 40 (CLK0)**.  
+2. Alimentar la placa conectando el pin 1 al 2.  
+3. Observa forma de onda.
+- Alimentar el circuito y medir en el header de salida del buffer (pin 40).  
 - Verificar que la frecuencia sea de **20.000 MHz ± 50 ppm**, un ciclo de trabajo entre 40–60 %, amplitud cercana a 3 Vpp.  
 
 **Criterio:** Señal estable, libre de deformaciones y en frecuencia correcta.
@@ -175,15 +197,25 @@ Todos los caminos coinciden con el esquemático y no hay cortos entre rieles.
 - GND común entre Arduino y placa.  
 - Enviar secuencias de ON/OFF para probar encendido y apagado
 - Enviar un PWM de 1 kHz para probar el brillo.
+  
+**Entradas de control:** pines 27: LED0, 25: LED1, 23: LED2, 21: LED3, 19: LED4, 17: LED5, 15: LED6 y 13: LED7   
+**Salida visible:** cada LED D1–D8  
+**Alimentación:** VDD30 (pin 6 del header de alimentación) 
 
 **Criterio:** Todos los LEDs encienden, varían brillo y no presentan parpadeo.
 ### 5.8 LCD/OLED bufferizado con Arduino (T-6)
 <p align="justify"> El display se valida mediante el header intermedio, usando el Arduino para generar la secuencia de inicialización y los patrones de prueba. SSe conectan MOSI/SCLK/CS/DC/RST respetando niveles de 3.3 V. Se inicializa el controlador y se muestra un patrón o texto. </p>
 
 **Objetivo:** Confirmar inicialización y escritura básica vía Arduino.
+**Pines:**
 
+- LCD0 → pin 9
+- LCD1 → pin 11
+- Alimentación: VDD30 (pin 4 del header de alimentación)
+  
 **Procedimiento:**
-- Conectar Arduino a SDA/SCL/RES del header con resistencias de pull-up de 4.7 kΩ.
+
+- Conectar Arduino a SDA/SCL/RES del header con resistencias de pull-up de 4.7 kΩ a pin 9 y 11.
 - Usar librerías y comandos básicos del dispositivo en US2066.
 - Enviar un PWM de 1 kHz para probar el brillo.
 
@@ -196,20 +228,35 @@ Todos los caminos coinciden con el esquemático y no hay cortos entre rieles.
 **Objetivo:** Confirmar lectura/escritura/erase básicos con Arduino.
 
 **Procedimiento:**
+
 - Conectar Arduino a SDA/SCL/RES del header con resistencias de pull-up de 4.7 kΩ.
 - Conectar GND común.
 - Enviar secuencia SPI para comprobar escritura y lectura
+- 
 **Criterio:** Coincidencia entre datos escritos y leídos, sin fallas ni comportamiento errático y sin errores en verificación 
 
 ### 5.10 Revisión con ASIC montado
 <p align="justify"> Con el ASIC soldado y revisado visualmente, se repiten brevemente las pruebas T-1, T-2, T-3 y T-4 bajo carga real. Se busca confirmar que el chip no introduce ruidos ni caídas adicionales. <strong>Criterio de aceptación:</strong> resultados dentro de márgenes definidos en las pruebas base. </p>
 
+
 ### 5.11 Arranque funcional con Siwa (T-8)
 <p align="justify"> Con la placa validada eléctricamente, se programa un firmware de diagnóstico mediante la herramienta Siwa. Al encender, debe correr los programas cargados previamente. Se repiten tres ciclos de arranque incluyendo reset y ciclo de poder. <strong>Criterio de aceptación:</strong> comportamiento consistente en los tres intentos, sin bloqueos ni fallos en periféricos. </p>
+**Procedimiento:** 
+
+- Programar firmware de diagnóstico (LED heartbeat 1 Hz + texto en LCD).
+- Alimentar la placa (Vin = 5 V).
+
+**Observar:**
+
+- LED heartbeat visible.
+- Display muestra texto.
 
 ### 5.12 Medición de consumo por pista (T-9)
 <p align="justify"> Se mide la corriente de cada pista usando los headers de entrada y salida de medición. Se registran condiciones de reposo y actividad . <strong>Criterio de aceptación:</strong> cada riel dentro de ± 10 % del objetivo y sin caídas o rizado fuera de límites definidos en T-1/T-2. </p>
+**Procedimiento:**
 
+- Inserta amperímetro en serie con pin correspondiente en el header de alimentación, conectar pines 1, 3 y 5 con 2, 4 y 8 respectivamente, y medir voltaje y corrientes.
+- Mide corriente en reposo y durante ejecución del firmware.
 
 ## 6. Checklist de cierre del Sprint 3
 
